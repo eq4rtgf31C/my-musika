@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+    background-color: #414141;
+    color: #fff;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ========== ИКОНКИ ========== */
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: nowrap;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 80px;
+    flex: 0 1 auto;
+}
+
+.icon-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #535151;
+    transition: all 0.3s ease;
+    flex-shrink: 0; 
+}
+
+.icon-text {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 80px;
+    hyphens: auto; 
+}
+
+/* Стили для иконок (оставляем твои) */
+.icon0 { border: 3px solid #df4b10; box-shadow: 0 0 10px #df4b10; }
+.icon0:hover { transform: scale(1.1); box-shadow: 0 0 20px #df4b10; }
+.icon1 { border: 3px solid #f01010; box-shadow: 0 0 10px #f01010; }
+.icon1:hover { transform: scale(1.1); box-shadow: 0 0 20px #f01010; }
+.icon2 { border: 3px solid #106adf; box-shadow: 0 0 10px #106adf; }
+.icon2:hover { transform: scale(1.1); box-shadow: 0 0 20px #106adf; }
+.icon3 { border: 3px solid #f0bc10; box-shadow: 0 0 10px #f0bc10; }
+.icon3:hover { transform: scale(1.1); box-shadow: 0 0 20px #f0bc10; }
+.icon4 { border: 3px solid #b110f0; box-shadow: 0 0 10px #b110f0; }
+.icon4:hover { transform: scale(1.1); box-shadow: 0 0 20px #b110f0; }
+
+/* ========== ГРИД ДЛЯ КАРТОЧЕК ========== */
+.grid-container {
+    display: grid;
+    /* 🔥 ВАЖНО: auto-fit + minmax - магия адаптивности */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Отступы между карточками */
+    justify-content: center;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.music-card {
+    background: linear-gradient(135deg, #535151, #414141);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    border: 3px solid #858280c4;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* 🔥 Убрал фиксированную высоту - теперь карточка адаптивная */
+    min-height: 0;
+}
+
+/* 🔥 ВАЖНО: Сделаем изображение адаптивным */
+.music-image {
+    width: 100%; /* Занимает всю ширину карточки */
+    max-width: 300px; /* Максимальный размер */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    aspect-ratio: 1 / 1; /* Сохраняем квадратную форму */
+    object-fit: cover; /* Обрезаем изображение если нужно */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.music-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.music-artist {
+    font-size: 16px;
+    color: #df4b10;
+    margin-bottom: 15px;
+}
+
+.music-description {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+    margin-top: auto;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 📱 Телефоны (до 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Меньшие отступы на телефоне */
+    }
+    
+    .grid-container {
+        /* 🔥 На телефоне: 1 карточка в ряд */
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    .music-card {
+        padding: 20px; /* Меньше внутренних отступов */
+        min-height: 0; /* Убираем фиксированную высоту */
+    }
+    
+    .music-image {
+        max-width: 250px; /* Уменьшаем максимальную ширину */
+    }
+    
+    .music-title {
+        font-size: 20px; /* Чуть меньше шрифт */
+    }
+    
+    .music-artist {
+        font-size: 14px;
+    }
+    
+    .music-description {
+        font-size: 13px;
+    }
+    
+    /* Адаптивность для иконок */
+    .icons {
+        gap: 10px;
+        padding: 10px;
+        flex-wrap: wrap; /* Разрешаем перенос на телефоне */
+    }
+    
+    .icon-item {
+        min-width: 70px;
+    }
+    
+    .icon-text {
+        font-size: 11px;
+        max-width: 70px;
+    }
+    
+    .icon-item img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* 📟 Планшеты (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .grid-container {
+        /* 🔥 На планшете: 2 карточки в ряд */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .music-image {
+        max-width: 280px;
+    }
+}
+
+/* 💻 Компьютеры (1025px+) */
+@media (min-width: 1025px) {
+    .grid-container {
+        /* 🔥 На компьютере: 3 карточки в ряд */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
