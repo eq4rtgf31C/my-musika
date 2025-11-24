@@ -1,135 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUSIK</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MUSIK | Точный подбор цветов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>МОЯ ЛЮБИМАЯ МУЗЫКА</h1>
-    <p>СЛУШАЮ МУЗЫКУ В:</p>
-<div class="icons">
-    <div class="icon-item">
-        <img src="icon.png" alt="Soundcloud" class="icon0">
-        <span class="icon-text">soundcloud</span>
-    </div>
-    <div class="icon-item">
-        <img src="icon (1).png" alt="Youtube Music" class="icon1">
-        <span class="icon-text">music youtube</span>
-    </div>
-    <div class="icon-item">
-        <img src="icon (2).png" alt="VK music" class="icon2">
-        <span class="icon-text">VK music</span>
-    </div>
-    <div class="icon-item">
-        <img src="icon (3).png" alt="Yandex Music" class="icon3">
-        <span class="icon-text">yandex music</span>
-    </div>
-    <div class="icon-item">
-        <img src="icon (4).png" alt="Deezer" class="icon4">
-        <span class="icon-text">Deezer</span>
-    </div>
-</div>
     
+    <style>
+    body { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+    img { pointer-events: none; }
+</style>
+<header class="main-header">
+    <h1 class="main-title">МОЯ ЛЮБИМАЯ МУЗЫКА =3</h1>
 
-<h2>^_- ЛЮБИМАЯ МУЗЫКА ^_-</h2>
-<div class="grid-container">
-    <div class="music-card">
-        <img src="artworks-2wZz3hLPFp0cXzEk-PanQJQ-t500x500.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Пыльные антресоли</h2>
-        <p class="music-artist">Овсянкин feat. Моиркит</p>
-        <p class="music-description">ОЧЕНЬ класная песня крутые биты и сам текст песни советую послушать</p>
+    <div class="music-services">
+        <h2 class="services-title">слушаю музыку в:</h2>
+
+        <div class="services-icons">
+
+            <div class="service YouTube">
+                <img src="music youtube.png" alt="YouTube Music">
+                <div class="service-name">YouTube Music</div>
+            </div>
+
+            <div class="service SoundCloud">
+                <img src="soundcloud.png" alt="SoundCloud">
+                <div class="service-name">SoundCloud</div>
+            </div>
+
+            <div class="service Deezer">
+                <img src="deezer.png" alt="Deezer">
+                <div class="service-name">Deezer</div>
+            </div>
+
+            <div class="service VK">
+                <img src="vk music.png" alt="VK Music">
+                <div class="service-name">VK Music</div>
+            </div>
+
+            <div class="service Yandex">
+                <img src="yandex music.png" alt="Yandex Music">
+                <div class="service-name">Yandex Music</div>
+            </div>
+
+        </div>
     </div>
-    <div class="music-card">
-        <img src="artworks-wDpYJg1s8nTJuxHq-frmqUQ-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Школа трупов</h2>
-        <p class="music-artist">МБ Пакет</p>
-        <p class="music-description">ОЧЕНЬ КРУТОЙ ТЕКСТ И БИТЫ советую вам послушать. В песни рассказывается про события в школе НОМЕР 1 ГОРОД БЕСЛАН И как люди в школе УМИРАЛИ мой любимый исполнитель.</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-wDpYJg1s8nTJuxHq-frmqUQ-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Помилуй мя грешного</h2>
-        <p class="music-artist">МБ Пакет</p>
-        <p class="music-description">снова крутая песня и советую вам послушать и вообще познакомится с музыкой и творчеством МБ Пакет</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-sPMaqSGoseqgg0nn-59IG5w-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Рокишь?</h2>
-        <p class="music-artist">Овсянкин feat. Ядовитая тима</p>
-        <p class="music-description">очень вайбовая песня слушал когда учился в школе и советую послушать ВАМ ВАМ ВАМ послушать :D</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-sPMaqSGoseqgg0nn-59IG5w-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">БДСМ где С это СДВГ</h2>
-        <p class="music-artist">Овсянкин feat. Ядовитая тима </p>
-        <p class="music-description">крутой текст и иммет смысл хотя все песни иммеют смысл надо их хорошенько понять</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-000555661965-mazl6j-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Любите меня</h2>
-        <p class="music-artist">Овсянкин</p>
-        <p class="music-description">Очень атмасферная песня самая любимая у меня :D</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-000377271870-73dcnv-t500x500.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Твой сосед шизофреник</h2>
-        <p class="music-artist">МБ Пакет</p>
-        <p class="music-description">Это альбом о жизни подростка, только-только вышедшем во «взрослую» жизнь и оказавшимся к ней неготовым. Разочарование в окружающих людях, в себе самом, в идеях и ценностях, которые давно уже перестали адекватно соотноситься с действительностью. Есть песни о первой любви, куда ж без этого, об опыте употребления веществ, о спектаклеобразности политики и социальных событий (Юра Гагарин – Господин Президент – Процесс). Заканчивается это всё сорокинской нормой, каждодневным поеданием говна и последующим самоубийством. Жанр музыки я бы охарактеризовал как «суицидальный хип-хоп».</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-AmySQ935QNqIcqbW-StRVIw-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">bugchasing</h2>
-        <p class="music-artist">овсянкин</p>
-        <p class="music-description">это тоже альбомб где исполнитель перпеживает о расставания с девушкой альбом посвящен самой девушке </p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-000248225062-jnm3tz-t500x500.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Кукушка</h2>
-        <p class="music-artist">Слава КПСС</p>
-        <p class="music-description">очень классно сделано и очень вайбовая В целом Слава КПСС это очень крутой челик советую</p>
-    </div>
+
+    <h2 class="main-subtitle">(❁´◡`❁) Все мои любимые песни и не только (❁´◡`❁)</h2>
+</header>
+
+
+
+    <div id="cards-container" class="cards-container">
+        
+        <!-- Карточка 1 -->
         <div class="music-card">
-        <img src="artworks-ng4wZLagSqsylCxM-08YsXw-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Рождественское Откровение</h2>
-        <p class="music-artist">Овсянкин</p>
-        <p class="music-description">комфортая песни комфортный текст очень классно сделано советую послушать поднимает настроениен и не только(^///^)</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-ng4wZLagSqsylCxM-08YsXw-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Твой Подарок Уже Под Елкой</h2>
-        <p class="music-artist">Овсянкин</p>
-        <p class="music-description">не трек а основоном фонк или биты не знаю но мне очень понравился так что советую послушать</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-KnU20PLzIdeFAkhd-dKp6tA-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Кошачья Бацыла</h2>
-        <p class="music-artist">Kunteynir</p>
-        <p class="music-description">ОХ пиздец я так люблю группу Kunteynir много есть куртых песень Паша Техник талантлифвый битмейкер и поёт просто заебись как очень классно советую это послушать и много чего другого от этой группы я прям теку</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-000551366523-62eyh6-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">ПАЛЕЦ К ВЕРХУ</h2>
-        <p class="music-artist">KUNTEYNIR feat РАСКОЛЬНИКОВ</p>
-        <p class="music-description">ну тут нечего сказать одни эмоции две легенды русского андерграунда</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-v1VQ4VV1T1jhCgyX-HHU6Dw-t500x500.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Соседи стучат по трубам</h2>
-        <p class="music-artist">Валентин Стрыкало</p>
-        <p class="music-description">мне нравится исполнитель много очень интерсных песень очень круто советую послушать не пожалеете спасл меня от депресняка</p>
-    </div>
-    <div class="music-card">
-        <img src="artworks-dpIp0EC3Dbomyelm-3p6DMQ-original.jpg" alt="Обложка альбома" class="music-image">
-        <h2 class="music-title">Самый грустный</h2>
-        <p class="music-artist">ssshhhiiittt!</p>
-        <p class="music-description">Очень прикольная группа и у них просто заебса песни советую прям послушать там много грустных песень но можете найти и другие песни группы</p>
+            <div class="album-cover">
+                <img src="artworks-2wZz3hLPFp0cXzEk-PanQJQ-t500x500.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Пыльные антресоли</h3>
+            <p class="music-artist">Овсянкин feat. Моиркит</p>
+            <p class="music-desc">ОЧЕНЬ классная песня, крутые биты и сам текст — советую послушать</p>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-wDpYJg1s8nTJuxHq-frmqUQ-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Школа трупов</h3>
+            <p class="music-artist">МБ Пакет</p>
+            <p class="music-desc">ОЧЕНЬ КРУТОЙ ТЕКСТ И БИТЫ советую вам послушать. В песни рассказывается про события в школе НОМЕР 1 ГОРОД БЕСЛАН И как люди в школе УМИРАЛИ мой любимый исполнитель </p>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-wDpYJg1s8nTJuxHq-frmqUQ-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Помилуй мя грешного</h3>
+            <p class="music-artist">МБ Пакет</p>
+            <p class="music-desc">снова крутая песня и советую вам послушать и вообще познакомится с музыкой и творчеством МБ Пакет</p>
+        </div>
+
+        <!-- Карточка 4 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-sPMaqSGoseqgg0nn-59IG5w-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Рокишь?</h3>
+            <p class="music-artist">Овсянкин feat. Ядовитая тима</p>
+            <p class="music-desc">Оочень вайбовая песня слушал когда учился в школе и советую послушать ВАМ ВАМ ВАМ послушать :D</p>
+        </div>
+
+        <!-- Карточка 5 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-sPMaqSGoseqgg0nn-59IG5w-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">БДСМ где С это СДВГ</h3>
+            <p class="music-artist">Овсянкин feat. Ядовитая тима</p>
+            <p class="music-desc">крутой текст и иммет смысл хотя все песни иммеют смысл надо их хорошенько понять<</p>
+        </div>
+
+        <!-- Карточка 6 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-000555661965-mazl6j-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Любите меня</h3>
+            <p class="music-artist">Овсянкин</p>
+            <p class="music-desc">Очень атмосферная песня — самая любимая у меня :D</p>
+        </div>
+
+        <!-- Карточка 7 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-000377271870-73dcnv-t500x500.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Твой сосед шизофреник</h3>
+            <p class="music-artist">МБ Пакет</p>
+            <p class="music-desc">Это альбом о жизни подростка, только-только вышедшем во «взрослую» жизнь и оказавшимся к ней неготовым. Разочарование в окружающих людях, в себе самом, в идеях и ценностях, которые давно уже перестали адекватно соотноситься с действительностью. Есть песни о первой любви, куда ж без этого, об опыте употребления веществ, о спектаклеобразности политики и социальных событий (Юра Гагарин – Господин Президент – Процесс). Заканчивается это всё сорокинской нормой, каждодневным поеданием говна и последующим самоубийством. Жанр музыки я бы охарактеризовал как «суицидальный хип-хоп».</p>
+        </div>
+
+        <!-- Карточка 8 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-AmySQ935QNqIcqbW-StRVIw-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">bugchasing</h3>
+            <p class="music-artist">Овсянкин</p>
+            <p class="music-desc">Альбом о расставании с девушкой — посвящён ей</p>
+        </div>
+
+        <!-- Карточка 9 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-000248225062-jnm3tz-t500x500.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Кукушка</h3>
+            <p class="music-artist">Слава КПСС</p>
+            <p class="music-desc">Очень классно сделано и вайбово — Слава КПСС крутой, советую</p>
+        </div>
+
+        <!-- Карточка 10 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-ng4wZLagSqsylCxM-08YsXw-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Рождественское Откровение</h3>
+            <p class="music-artist">Овсянкин</p>
+            <p class="music-desc">Комфортная песня, комфортный текст — поднимает настроение (^///^)</p>
+        </div>
+
+        <!-- Карточка 11 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-ng4wZLagSqsylCxM-08YsXw-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Твой Подарок Уже Под Ёлкой</h3>
+            <p class="music-artist">Овсянкин</p>
+            <p class="music-desc">Не трек, а фонк/биты — очень понравилось</p>
+        </div>
+
+        <!-- Карточка 12 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-KnU20PLzIdeFAkhd-dKp6tA-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Кошачья Бацыла</h3>
+            <p class="music-artist">Kunteynir</p>
+            <p class="music-desc">ОХ пиздец я так люблю группу Kunteynir много есть куртых песень Паша Техник талантлифвый битмейкер и поёт просто заебись как очень классно советую это послушать и много чего другого от этой группы я прям теку</p>
+        </div>
+
+        <!-- Карточка 13 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-000551366523-62eyh6-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">ПАЛЕЦ К ВЕРХУ</h3>
+            <p class="music-artist">KUNTEYNIR feat. РАСКОЛЬНИКОВ</p>
+            <p class="music-desc">Две легенды русского андерграунда — одни эмоции</p>
+        </div>
+
+        <!-- Карточка 14 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-v1VQ4VV1T1jhCgyX-HHU6Dw-t500x500.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Соседи стучат по трубам</h3>
+            <p class="music-artist">Валентин Стрыкало</p>
+            <p class="music-desc">Много интересных песен — спас меня от депресняка</p>
+        </div>
+
+        <!-- Карточка 15 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-dpIp0EC3Dbomyelm-3p6DMQ-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Самый грустный</h3>
+            <p class="music-artist">ssshhhiiittt!</p>
+            <p class="music-desc">Прикольная группа с заебись песнями — много грустных, но есть и другие</p>
+        </div>
+
+        <!-- Карточка 16 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="https://i1.sndcdn.com/artworks-000126938986-pja4dj-t500x500.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Bite It You Scum</h3>
+            <p class="music-artist">GG ALLIN</p>
+            <p class="music-desc">безумный псих советую почитать его биографию класные песни</p>
+        </div>
+        <!-- Карточка 17 -->
+        <div class="music-card">
+            <div class="album-cover">
+                <img src="artworks-UNB5E9pJ8f8TAOwG-LqdshQ-original.jpg" 
+                     alt="Обложка альбома" 
+                     class="music-image" 
+                     crossorigin="anonymous">
+            </div>
+            <h3 class="music-title">Патрули xXx</h3>
+            <p class="music-artist">Овсянкин</p>
+            <p class="music-desc">альбом с заебись песнями много интерсные фиты кое с кем крутые песни для молодёжи но старые песни Овсянкина были лучше но это тоже нечего<3</p>
+        </div>
+
     </div>
 
-</div>
-
-<script src="script.js"></script>
-</body> 
+    <script src="script.js"></script>
+</body>
 </html>
-
